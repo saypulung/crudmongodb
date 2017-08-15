@@ -62,9 +62,6 @@ app.post('/hapusdata/(:id)',function(req,res){
             db.close();
         });
     });
-    res.writeHead(302, {
-        'Location': '/listdata'
-    });
 })
 app.get('/tambahdata',function(req,res){
     var parseData ={};
